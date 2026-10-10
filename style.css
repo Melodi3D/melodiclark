@@ -1,30 +1,29 @@
-@font-face {
-    font-family: 'lexenddeca';
-    src: url('Lexend_Deca/static/LexendDeca-Regular.ttf');
-    font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'lexenddeca';
-    src: url('Lexend_Deca/static/LexendDeca-Light.ttf');
+body {
+    margin: 0;
+    background-color: white;
+    color: black;
+    font-family: 'Lexend Deca', sans-serif;
     font-weight: 200;
 }
 
-@font-face {
-    font-family: 'lexenddeca';
-    src: url('Lexend_Deca/static/LexendDeca-Medium.ttf');
-    font-weight: 300;
-}
-
-#parent{
+#parent {
     display: flex;
     margin: 5px;
+    min-height: 100vh;
 }
 
-#sidebar{
+#sidebar {
     padding-left: 30px;
     width: 180px;
     position: fixed;
+    top: 5px;
+    left: 5px;
 }
 
 .title {
@@ -33,11 +32,20 @@
 
 .sidebar-links {
     list-style-type: none;
-    margin-top: 15px; 
-    font-family: 'lexenddeca';
+    margin-top: 15px;
+    padding-left: 0;
+    font-family: 'Lexend Deca', sans-serif;
     font-weight: 200;
     font-size: 20px;
-    padding-left: 0;
+}
+
+.sidebar-links li {
+    margin-bottom: 10px;
+}
+
+.sidebar-links a {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 200;
 }
 
 .sidebar-links a:hover {
@@ -46,51 +54,52 @@
 }
 
 .about-links {
-    font-family: 'lexenddeca';
+    font-family: 'Lexend Deca', sans-serif;
     font-weight: 200;
     font-size: 15px;
-    padding-left: 0; 
+    padding-left: 0;
     text-decoration: underline;
 }
 
 .link-icon img {
-    max-height: auto; 
+    max-height: none;
     width: 2em;
     margin-right: 10px;
 }
 
 .link-icon .indiv-icon {
     display: flex;
-    align-items: center; /* Center items vertically within indiv-icon */
-    margin-bottom: 5px; /* Add margin between indiv-icon elements */
+    align-items: center;
+    margin-bottom: 5px;
 }
 
 .link-icon a:hover {
-    text-decoration: underline ;
+    text-decoration: underline;
 }
 
 .link-icon a {
     display: flex;
-    align-items: center; /* Center items vertically within the anchor tags */
-    margin-bottom: 10px; /* Add margin between anchor tags */
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .link-icon {
-    font-family: 'lexenddeca';
-    font-weight: 200; 
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 200;
     display: flex;
     flex-direction: column;
 }
 
 ul li {
     list-style-type: none;
-    font-family: 'lexenddeca';
+    font-family: 'Lexend Deca', sans-serif;
     font-weight: 200;
-    padding-left: 0px;
-    margin-bottom: 10px; 
+    padding-left: 0;
+    margin-bottom: 10px;
 }
 
-a:link, a:visited{
+a:link,
+a:visited {
     color: black;
     text-decoration: none;
 }
@@ -99,77 +108,68 @@ a:hover {
     text-decoration: underline;
 }
 
-#content{
-    margin: 20px;
-    margin-left: 260px;
-    margin-right: 40px;
+#content {
+    flex: 1;
+    min-width: 0;
+    margin: 20px 40px 20px 260px;
     padding-bottom: 10px;
 }
 
 h1 {
-    font-family: 'lexenddeca';
+    font-family: 'Lexend Deca', sans-serif;
     font-weight: 500;
     font-size: 45px;
 }
 
 h2 {
-    font-family: 'lexenddeca';
+    font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 h3 {
-    font-family: 'lexenddeca';
+    font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
-p {   
-    font-family: 'lexenddeca';
+p {
+    font-family: 'Lexend Deca', sans-serif;
     line-height: 22px;
     font-weight: 200;
 }
 
 .float-container {
     display: flex;
-    align-items: flex-start;   /* aligns text with top of image */
-    gap: 20px;                 /* space between image and text */
-    padding: 20px;             /* optional padding around container */
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
 }
 
 .image-child {
-    flex: 0 0 auto;           /* do not grow, do not shrink by default */
-    max-width: 450px;         /* max width of image column */
-    width: 100%;              /* allows image to shrink on small screens */
+    flex: 0 0 auto;
+    max-width: 450px;
+    width: 100%;
 }
 
 .image-child img {
-    width: 100%;              /* scales image to container */
+    width: 100%;
     height: auto;
     display: block;
 }
 
 .text-child {
-    flex: 1;                  /* takes all remaining space */
-}
-
-@media (max-width: 1250px) {
-    .float-container {
-        flex-direction: column;  /* stack items vertically */
-    }
-    .image-child,
-    .text-child {
-        width: 100%;             /* take full width */
-    }
+    flex: 1;
+    min-width: 0;
 }
 
 .video {
     width: 100%;
+    max-width: 900px;
     position: relative;
     overflow: hidden;
-    padding-top: 56.25%; /* 16:9 aspect ratio (height/width) */
-    max-height: 600px; /* Set a maximum height for the video container */
+    aspect-ratio: 16 / 9;
 }
 
 .video iframe {
@@ -178,146 +178,128 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
+    border: 0;
 }
 
 .me {
-    /* max-width: 500px; */
     max-width: 100%;
     padding-bottom: 10px;
 }
 
-@media (max-width: 400px) {
-    .video {
-        padding-top: 75%; /* Adjust the padding-top value for the desired aspect ratio */
-        max-height: none; /* Remove the maximum height on smaller screens if needed */
-    }
-
-    .video iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-}
-
-@media (max-width: 2000px) {
-    .me {
-        width: 90%;
-    }
-}
-
-@media (max-width: 1230px) {
-    .float-child {
-        width: 100%; /* Set width to 100% for smaller screens */
-        float: none; /* Clear the float to stack the divs */
-    }
-}
-
 .projects-title {
-    /* margin-top: 20px; */
     margin-bottom: 5px;
     font-size: 28px;
 }
 
-@media (max-width: 340px) {
-    #rig li {
-        width:20%;
-    }
+#rig {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+    padding-left: 0;
+    margin-top: 25px;
+    list-style: none;
+}
+
+#rig li {
+    float: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    min-width: 0;
+    list-style: none;
 }
 
 .rig-img {
-    max-width: 340px;
+    display: block;
     width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
 }
 
 .rig-cell {
-    width: 340px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
     position: relative;
     display: block;
+    overflow: hidden;
+    background-color: #f5f5f5;
 }
 
 .rig-overlay {
     display: block;
     position: absolute;
     text-align: center;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    inset: 0;
     opacity: 0;
-    transition: .5s ease;
-    height: 340px;
-
+    transition: opacity 0.5s ease;
+    background-color: black;
 }
 
 .rig-text {
-    font-family: 'lexenddeca';
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 300;
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 90%;
     transform: translate(-50%, -50%);
     text-align: center;
     opacity: 0;
     transition: opacity 0.5s ease;
-}
-
-#rig {
-    padding-left: 0px;
+    color: white;
 }
 
 .rig-cell:hover .rig-overlay {
-    opacity: 0.5; 
-    background-color: black; 
-    height: 340px;
+    opacity: 0.5;
 }
 
 .rig-cell:hover .rig-text {
     opacity: 1;
-    color: white;
-}
-
-#rig li {
-    float: left;
-    margin-right: 10px;
-    height: 340px;
-    width: 340px;
 }
 
 .spacer {
-    margin-bottom:800px;
+    margin-bottom: 800px;
 }
 
 .spacer2 {
-    margin-bottom:240px;    
+    margin-bottom: 240px;
 }
 
 .spacer3 {
-    margin-bottom:20px;     
-}
-
-.spacer4 {
-    margin-bottom:450px;     
-}
-
-.pres-rig {
-    padding-left: 0px;
-
-}
-
-.pres-rig li {
-    display: inline-block;
-    margin-right: 10px;
-    height:190px;
-    margin-top: 0px;
     margin-bottom: 20px;
 }
 
+.spacer4 {
+    margin-bottom: 450px;
+}
+
+.pres-rig {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.pres-rig li {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0 0 20px;
+}
+
 .pres-rig-cell {
-    width: 360px;
+    width: 100%;
     position: relative;
     display: block;
-    
+}
+
+.pres-rig-cell img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .section {
@@ -326,7 +308,7 @@ p {
 
 .materials {
     margin-left: 20px;
-    font-family: 'lexenddeca';
+    font-family: 'Lexend Deca', sans-serif;
     font-weight: 200;
     line-height: 25px;
 }
@@ -334,16 +316,16 @@ p {
 .materials-title {
     margin-top: 20px;
     margin-bottom: 3px;
-    font-family: 'lexenddeca';
+    font-family: 'Lexend Deca', sans-serif;
     font-weight: 300;
     font-size: 20px;
 }
 
 video {
-    max-width: 700px; /* Set the maximum width */
-    width: 100%; /* Make the video responsive within its container */
-    height: auto; /* Maintain the aspect ratio */
-    overflow: hidden; /* Hide any overflow beyond the max-width */
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
 .smaller-video {
@@ -351,23 +333,21 @@ video {
 }
 
 .images img {
-    /* max-width: 692px; */
     max-width: 700px;
-    width: 100%; /* Make the video responsive within its container */
-    height: auto; /* Maintain the aspect ratio */
-    overflow: hidden; /* Hide any overflow beyond the max-width */
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
 .detailed-images img {
-    /* max-width: 692px; */
     max-width: 100%;
-    width: 100%; /* Make the video responsive within its container */
-    height: auto; /* Maintain the aspect ratio */
-    overflow: hidden; /* Hide any overflow beyond the max-width */
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
 ol {
-    font-family: 'lexenddeca';
+    font-family: 'Lexend Deca', sans-serif;
     font-weight: 200;
 }
 
@@ -377,16 +357,70 @@ ol .indent {
 
 .anim-text {
     margin-top: 3px;
-    margin-bottom: 0px;
-}
-body,
-h1, h2, h3,
-p, li, ol, ul,
-.sidebar-links,
-.materials-title {
-    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 0;
 }
 
-body, h1, h2, h3, p, li, ul, ol, a {
-    font-family: 'Lexend Deca', sans-serif;
+@media (max-width: 1250px) {
+    .float-container {
+        flex-direction: column;
+    }
+
+    .image-child,
+    .text-child {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1150px) {
+    #rig,
+    .pres-rig {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    #parent {
+        display: block;
+    }
+
+    #sidebar {
+        position: static;
+        width: 100%;
+        padding: 15px 20px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .sidebar-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 15px;
+        font-size: 16px;
+    }
+
+    .sidebar-links li {
+        margin-bottom: 0;
+    }
+
+    #content {
+        margin: 20px;
+        padding-bottom: 30px;
+    }
+
+    #rig,
+    .pres-rig {
+        grid-template-columns: 1fr;
+    }
+
+    .float-container {
+        padding: 0;
+    }
+
+    .spacer,
+    .spacer2,
+    .spacer4 {
+        margin-bottom: 40px;
+    }
 }
