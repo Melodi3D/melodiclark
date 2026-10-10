@@ -6,53 +6,222 @@
     </head>
     <body>
         <div id="parent">
-            <div id="sidebar">
-                <h1 class="title">Melodi<br>Clark</h1>
-                <ul class="sidebar-links">
-                    <li><a href="./" class="link">Reel</a></li>
-                    <li><a href="./projects" class="link">Projects</a></li>
-                    <li><a href="./presentations" class="link">Presentations</a></li>
-                    <li><a href="./art">Art</a></li>
-                    <li><a href="./about" class="link">About</a></li>
-                </ul>
-            </div>
+             <div id="sidebar">
+            <h1 class="title">Melodi<br>Clark</h1>
+            <ul class="sidebar-links">
+                <li><a href="./index.html" class="link">Reel</a></li>
+                <li><a href="./projects.html" class="link">Projects</a></li>
+                <li><a href="./about.html" class="link">About</a></li>
+                <li><a href="https://github.com/Melodi3D" target="_blank" rel="noopener noreferrer" class="link">GitHub</a></li>
+                <li><a href="https://www.artstation.com/melodi3d" target="_blank" rel="noopener noreferrer" class="link">ArtStation</a></li>
+            </ul>
         </div>
+
+        <!-- MAIN CONTENT -->
         <div id="content">
-            <div class="float-container" id="float-cont">
-                <div class="float-child image-child">
-                    <img src="images/me.gif" class="me">
-                </div>
-                <div class="float-child text-child">
-                    <h2>Hi, I'm Annette!</h3>
-                    <p>
-                        I recently graduated with my B.S. in Computer Science from Oregon State University, 
-                        with a focus in applied computer graphics.
-                    </p>
-                    <p>
-                        My interests lie at the intersection of graphics technology and creativity,
-                        and I aim to balance building a strong computer science foundation with 
-                        creating 3D projects that tell stories and explore artistic expression. 
-                    </p>
-                    <p>
-                        This has led me to <a href="./projects">advanced coursework and hands-on projects</a> 
-                        in computer graphics, visualization, and machine learning, while 
-                        developing 3D animations and interactive projects to gain insight into 
-                        production pipelines and the evolving needs of creative tools.
-                    </p>
-                    <p>
-                        My passion for CG has also driven me to contribute to <a href="./presentations">knowledge-sharing 
-                        initiatives</a> and to engage in continuous self-learning.
-                    </p>
-                    <br>       
-                    <div class="link-icon">
-                        <div class="indiv-icon"><a href="mailto:annettetongsak@gmail.com" target="_blank"><img src="images/mail.png">annettetongsak@gmail.com</a></div>
-                        <div class="indiv-icon"><a href="https://www.linkedin.com/in/annette-tongsak-186503288" target="_blank"><img src="images/linkedin.png">Annette-Tongsak</a></div> 
-                        <div class="indiv-icon"><a href="https://github.com/atongsak" target="_blank"><img src="images/github-mark.png">atongsak</a></div>
-                        <div class="indiv-icon"><a href="Annette_Tongsak.pdf" target="_blank"><img src="images/2.png">Resume</a></div> 
-                    </div>
-                </div>
+
+            <h2 class="projects-title">Technical Art & Character Rigging</h2>
+
+            <p>
+                I'm Melodi Clark, a Technical Artist specializing in
+                character rigging, Python tool development, and
+                procedural shading.
+            </p>
+
+            <p>
+                I develop animator-friendly rigs, procedural systems,
+                and production tools for 3D animation.
+            </p>
+
+            <!-- DEMO REEL -->
+            <h2 class="projects-title">Demo Reel</h2>
+
+            <p>
+                A selection of my character rigging, technical art,
+                and procedural development work.
+            </p>
+
+            <div class="video">
+                <!-- Replace the placeholder below with your Vimeo embed -->
+                <p>Demo reel coming soon.</p>
             </div>
+
+            <!-- PROJECTS -->
+            <div class="materials-title">Selected Projects</div>
+
+            <p>
+                Explore my technical projects and their development.
+            </p>
+
+            <ol>
+
+                <!-- PROJECT 1 -->
+                <li>
+                    <b>RigUp — Modular Biped Auto-Rigger</b>
+                    <p><i>Python / PySide6 / Autodesk Maya</i></p>
+
+                    <ul>
+                        <li>
+                            Developing a modular Python-based auto-rigging
+                            system for humanoid characters in Autodesk Maya.
+                        </li>
+                        <li>
+                            Automating guide placement, skeleton generation,
+                            joint orientation, and rig construction.
+                        </li>
+                        <li>
+                            Designing the system to support animator-friendly
+                            controls and reusable rigging components.
+                        </li>
+                        <li>
+                            Work in progress.
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- PROJECT 2 -->
+                <li>
+                    <b>CV Toolkit — Maya Python Tool</b>
+                    <p><i>Python / PySide6 / Qt Designer / Autodesk Maya</i></p>
+
+                    <ul>
+                        <li>
+                            Developed a custom Maya tool for creating,
+                            editing, and organizing NURBS curve controls.
+                        </li>
+                        <li>
+                            Implemented curve utilities, customizable presets,
+                            color controls, and selection tools.
+                        </li>
+                        <li>
+                            Added offset-group creation and workflow
+                            utilities to reduce repetitive rigging tasks.
+                        </li>
+                        <li>
+                            Designed a user interface with PySide6
+                            and Qt Designer.
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- PROJECT 3 -->
+                <li>
+                    <b>Procedural OSL Halftone Shader</b>
+                    <p><i>Open Shading Language / Arnold / Autodesk Maya</i></p>
+
+                    <ul>
+                        <li>
+                            Developed a procedural non-photorealistic
+                            rendering shader inspired by comic-book
+                            halftone printing.
+                        </li>
+                        <li>
+                            Implemented screen-space dot patterns
+                            with adjustable size, rotation,
+                            contrast, and softness.
+                        </li>
+                        <li>
+                            Used surface-normal calculations to control
+                            halftone coverage across illuminated
+                            and shadowed regions.
+                        </li>
+                        <li>
+                            Created layered color patterns to achieve
+                            a stylized comic-book appearance.
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- PROJECT 4 -->
+                <li>
+                    <b>Biped Character Rig</b>
+                    <p><i>Autodesk Maya / Character Rigging</i></p>
+
+                    <ul>
+                        <li>
+                            Constructed a humanoid character rig
+                            with FK/IK arms and legs.
+                        </li>
+                        <li>
+                            Implemented FK/IK switching and matching,
+                            pole-vector controls, and foot-roll systems.
+                        </li>
+                        <li>
+                            Developed a ribbon-based spine system
+                            with stretch and squash functionality.
+                        </li>
+                        <li>
+                            Completed skinning and deformation refinement
+                            for the character and clothing.
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- PROJECT 5 -->
+                <li>
+                    <b>Mechanical Spider Rig</b>
+                    <p><i>Autodesk Maya / Mechanical Rigging</i></p>
+
+                    <ul>
+                        <li>
+                            Developed a mechanical spider rig
+                            with articulated legs.
+                        </li>
+                        <li>
+                            Implemented FK/IK leg controls
+                            and a master blending system.
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- PROJECT 6 -->
+                <li>
+                    <b>Procedural Gear Ratio Rig</b>
+                    <p><i>Autodesk Maya / Expressions</i></p>
+
+                    <ul>
+                        <li>
+                            Developed an interconnected mechanical
+                            gear system using Maya expressions.
+                        </li>
+                        <li>
+                            Calculated rotational relationships
+                            between gears with different tooth counts.
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- PROJECT 7 -->
+                <li>
+                    <b>Riggit — Creature Auto-Rigger</b>
+                    <p><i>Python / Autodesk Maya</i></p>
+
+                    <ul>
+                        <li>
+                            Developing a Python-based rigging system
+                            for creature characters.
+                        </li>
+                        <li>
+                            Exploring modular rigging workflows
+                            for non-humanoid anatomy.
+                        </li>
+                        <li>
+                            Work in progress.
+                        </li>
+                    </ul>
+                </li>
+
+            </ol>
+
+            <!-- FOOTER -->
+            <footer>
+                <p>
+                    © 2026 Melodi Clark |
+                    Technical Artist & Character TD
+                </p>
+            </footer>
+
         </div>
-    </body>
-    
+    </div>
+</body>
 </html>
