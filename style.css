@@ -379,3 +379,10 @@ ol .indent {
     margin-top: 3px;
     margin-bottom: 0px;
 }
+body,
+h1, h2, h3,
+p, li, ol, ul,
+.sidebar-links,
+.materials-title {
+    font-family: 'Lexend Deca', sans-serif;
+}
