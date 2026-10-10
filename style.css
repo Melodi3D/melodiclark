@@ -386,3 +386,7 @@ p, li, ol, ul,
 .materials-title {
     font-family: 'Lexend Deca', sans-serif;
 }
+
+body, h1, h2, h3, p, li, ul, ol, a {
+    font-family: 'Lexend Deca', sans-serif;
+}
